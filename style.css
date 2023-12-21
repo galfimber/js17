@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    padding: 100px 50px 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formBlock__label{
+    display: inline-block;
+    min-width: 180px;
+}
+.table{
+    border: 1px solid black;
+}
+.table *{
+    border: 1px solid black;
+}
+.title{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <form action="#" class="form">
+        <div class="formBlock">
+          <label class="formBlock__label" for="type">Тип автомобиля:</label>
+          <select id="type" required>
+            <option value="default" disabled selected>-- Тип --</option>
+            <option value="sedan">Седан</option>
+            <option value="suv">Внедорожник</option>
+          </select>
+        </div>
+        <div class="formBlock">
+          <label class="formBlock__label" for="mark">Марка:</label>
+          <input type="text" id="mark" required />
+        </div>
+        <div class="formBlock">
+          <label class="formBlock__label" for="model">Модель:</label>
+          <input type="text" id="model" required />
+        </div>
+        <div class="formBlock">
+          <label class="formBlock__label" for="year">Год производства:</label>
+          <input required type="number" id="year" required />
+        </div>
+        <fieldset>
+          <legend>Трансмиссия:</legend>
+          <div>
+            <input
+              type="radio"
+              class="transmission"
+              id="manual"
+              name="transmission"
+              value="manual"
+              required
+            />
+            <label class="formBlock__label" for="manual">Механическая</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="transmission"
+              id="auto"
+              name="transmission"
+              value="auto"
+              required
+            />
+            <label class="formBlock__label" for="auto">Автоматическая</label>
+          </div>
+        </fieldset>
+        <button type="submit" id="add">Сохранить</button>
+      </form>
+      <div class="tableBlock">
+        <h1 class="title">Автомобили</h1>
+        <table id="table" class="table">
+          <thead>
+            <tr>
+              <th>Тип автомобиля</th>
+              <th>Марка</th>
+              <th>Модель</th>
+              <th>Год производства</th>
+              <th>Трансмиссия</th>
+              <th>Привод</th>
+              <th>Топливо</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
